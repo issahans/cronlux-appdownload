@@ -54,7 +54,15 @@ function App() {
                       <Route path="/smart-redirect" element={<SmartRedirectPage />} />
                       <Route path="/blog" element={<BlogListPage />} />
                       <Route path="/blog/:slug" element={<BlogPostPage />} />
+                      
+                      {/* User Manual Routes - Multiple variations to catch different button links */}
                       <Route path="/usermanualpage" element={<UserManualPage />} />
+                      <Route path="/user-manual" element={<UserManualPage />} />
+                      <Route path="/manual" element={<UserManualPage />} />
+                      <Route path="/userManual" element={<UserManualPage />} />
+                      <Route path="/user_manual" element={<UserManualPage />} />
+                      
+                      {/* Catch all other routes */}
                       <Route path="*" element={<NotFoundPage />} />
                     </Routes>
                   </main>
